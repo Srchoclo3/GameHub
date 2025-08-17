@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GameHub - Blog de videojuegos">
+        <title>GameHub - Blog de videojuegos</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html">GameHub</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/inicio">Inicio</a></li>
+                    <li><a href="/proyectos">Proyectos</a></li>
+                    <li><a href="/perfil">Perfil</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/login" class="btn-primary">Iniciar sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Bienvenido a GameHub</h1>
+                <p>Gestiona tus proyectos, colabora con otros y alcanza tus metas</p>
+                <a href="/registro" class="btn-secondary">Registrate Gratis</a>
+            </div>
+        </section>
+        <!--CARACTERISTICAS-->
+        <section class="features">
+            <h2>¿Por qué deberias elegirnos?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Gestión Fácil</h3>
+                    <p>Administra todos tus proyectos en un solo lugar de forma intuitiva.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Colaboración</h3>
+                    <p>Comparte ideas y trabaja junto a tus compañeros en tiempo real.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Seguridad</h3>
+                    <p>Tus datos estaran protegidos con cifrado de última generación.</p>
+                </div>
+            </div>
+        </section>
+        <!--PROYECTOS RECIENTES-->
+        <section class="projects">
+            <h2>Proyectos Recientes</h2>
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <h4>Proyecto 1</h4>
+                    <p>Descripción</p>
+                    <a href="/proyecto/1" class="btn-link">Ver más</a>
+                </div>
+                <div class="projects-card">
+                    <h4>Proyecto 2</h4>
+                    <p>Descripción</p>
+                    <a href="/proyecto/2" class="btn-link">Ver más</a>
+                </div>
+                <div class="projects-card">
+                    <h4>Proyecto 3</h4>
+                    <p>Descripción</p>
+                    <a href="/proyecto/3" class="btn-link">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <!--CONTACTO / LOGIN-->
+        <section class="contact">
+            <h2>Contáctanos o inicia sesión</h2>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Corre electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 GameHub. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
