@@ -360,3 +360,25 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+@media (max-width: 768px) {
+  .navbar nav ul {
+      flex-direction: column;
+      background: var(--bg-secondary);
+      position: fixed;     /* <- en vez de absolute */
+      top: 60px;
+      right: 0;
+      width: 200px;
+      height: calc(100vh - 60px); /* que ocupe toda la pantalla debajo de navbar */
+      padding: 1rem;
+      display: none;
+      z-index: 999; /* para que no tape el toggle */
+  }
+
+  .navbar nav ul.active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+}
