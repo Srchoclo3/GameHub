@@ -116,23 +116,35 @@ body {
     background: var(--accent);
 }
 
-/* Botón hamburguesa */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto; 
-    position: relative;
-    z-index: 1000; 
-}
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: var(--text);
-    margin: 4px 0;
-    border-radius: 5px;
+.navbar {
+  display: flex;
+  justify-content: space-between; /* separa logo a la izquierda y menú/hamburguesa a la derecha */
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* se va a la derecha */
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 5px;
+}
 /* =============================
     HERO
 ============================= */
