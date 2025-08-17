@@ -163,3 +163,15 @@ document.querySelectorAll(".feature-card, .projects-card").forEach(el => {
 // EJECUTAR PERFIL SI EXISTE
 // =======================
 cargarPerfil();
+
+// =======================
+// MENU HAMBURGUESA
+// =======================
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".navbar nav ul");
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+}
