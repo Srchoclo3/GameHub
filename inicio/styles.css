@@ -49,6 +49,7 @@ body.light-mode {
 body {
     background-color: var(--bg);
     color: var(--text);
+    padding-top: 70px;
 }
 
 /* =============================
