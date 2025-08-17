@@ -121,6 +121,9 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-left: auto; 
+    position: relative;
+    z-index: 1000; 
 }
 .menu-toggle span {
     height: 3px;
